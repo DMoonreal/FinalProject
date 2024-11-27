@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hollow Knight - Guía Completa</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Existing Navbar and Sections... -->
+
+    <!-- New Comprehensive Section with Multiple Heading Levels -->
+    <section id="about-hallownest" class="py-5">
+      <div class="container">
+        <h1>Descubre el Mundo de Hollow Knight</h1>
+        
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Historia del Reino</h2>
+            <img 
+              src="/Imagenes/CiudaDeLagrimas.jpg" 
+              alt="Vista panorámica del reino de Hallownest" 
+              class="img-fluid mb-3 rounded"
+            >
+            <p>Hallownest es un reino subterráneo misterioso, poblado por criaturas insectoides que luchan contra una corrupción ancestral. Cada rincón del reino cuenta una historia de decadencia, esperanza y redención.</p>
+            
+            <h3>Características Principales</h3>
+            <img 
+              src="/Imagenes/caballero.jpg" 
+              alt="El Caballero de Hollow Knight" 
+              class="img-fluid mb-3 rounded"
+            >
+            <p>El juego destaca por su estilo artístico único, mecánicas de combate precisas y un mundo interconectado lleno de secretos. Los jugadores asumen el rol de un pequeño caballero sin nombre, equipado con una aguja que sirve como espada.</p>
+            
+            <h3>Explorando las Profundidades</h3>
+            <p>La exploración es fundamental en Hollow Knight. Cada área tiene su propia estética, enemigos y desafíos únicos, desde los <a href="https://hollowknight.fandom.com/es/wiki/Sendero_Verde">luminosos Senderos Verdes</a> hasta las oscuras profundidades del <a href="https://hollowknight.fandom.com/es/wiki/Nido_Profundo">Nido Profundo</a>.</p>
+          </div>
+          
+          <div class="col-md-4">
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th>Área</th>
+                  <th>Dificultad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ciudad de Lágrimas</td>
+                  <td>Media</td>
+                </tr>
+                <tr>
+                  <td>Senderos Verdes</td>
+                  <td>Baja</td>
+                </tr>
+                <tr>
+                  <td>Nido Profundo</td>
+                  <td>Alta</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Accessible Video Section -->
+    <section id="video-section" class="py-5 bg-light">
+      <div class="container">
+        <h2>Trailer Oficial</h2>
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.youtube.com/embed/UAO2urG23S4" 
+            title="Hollow Knight Trailer Oficial" 
+            allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
+        
+        <!-- Text Description for Video Content -->
+        <div class="mt-3 video-description">
+          <h3>Descripción del Trailer</h3>
+          <p>El trailer muestra escenas dramáticas de combate, exploración de cavernas intrincadas, y momentos épicos de confrontación con jefes imponentes. Resalta la estética oscura y el diseño artístico único del juego.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Form with Accessibility -->
+    <section id="feedback" class="py-5">
+      <div class="container">
+        <h2>Comparte tu Experiencia</h2>
+        <form id="game-feedback-form" aria-labelledby="form-title">
+          <h3 id="form-title">Formulario de Retroalimentación</h3>
+          
+          <div class="mb-3">
+            <label for="player-name" class="form-label">Nombre del Jugador</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="player-name" 
+              name="player-name" 
+              required 
+              aria-describedby="name-help"
+            >
+            <small id="name-help" class="form-text text-muted">Tu nombre o nickname en el juego</small>
+          </div>
+          
+          <div class="mb-3">
+            <label for="gameplay-rating" class="form-label">Calificación de Experiencia</label>
+            <select 
+              class="form-select" 
+              id="gameplay-rating" 
+              name="gameplay-rating" 
+              required
+            >
+              <option value="">Selecciona una calificación</option>
+              <option value="5">Excelente</option>
+              <option value="4">Muy Bueno</option>
+              <option value="3">Bueno</option>
+              <option value="2">Regular</option>
+              <option value="1">Necesita Mejoras</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Enviar Retroalimentación</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Existing Footer... -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
