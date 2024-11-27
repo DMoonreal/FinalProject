@@ -3,144 +3,236 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hollow Knight - Guía Completa</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet" />
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      rel="stylesheet"
-    />
+    <title>Guía Completa de Hollow Knight</title>
+    <style>
+      /* General Styles */
+      :root {
+        --primary-color: #007BFF;
+        --secondary-color: #333;
+        --background-color: #f9f9f9;
+        --text-color: #333;
+        --highlight-color: #0056b3;
+        --light-bg: #ffffff;
+        --dark-bg: #e9ecef;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      section {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 1200px;
+        background-color: var(--light-bg);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2, section h3 {
+        color: var(--primary-color);
+      }
+
+      a {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: var(--highlight-color);
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table th, table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      table th {
+        background-color: #000000; /* Azul oscuro de alto contraste */
+  color: #ffffff; /* Blanco para texto legible */
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+      }
+
+      /* Video Section */
+      .video-container {
+        position: relative;
+        padding-top: 56.25%;
+        margin-top: 20px;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* Form */
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form-control, .form-select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      /* Mejora de contraste para <th> */
+
+/* Mejora de contraste para el botón .btn */
+.btn {
+  background-color: #000000; /* Azul más oscuro */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #000000; /* Azul aún más oscuro para hover */
+}
+
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: var(--secondary-color);
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-    <!-- Existing Navbar and Sections... -->
+    <header>
+      <h1>Guía Completa de Hollow Knight</h1>
+    </header>
 
-    <!-- New Comprehensive Section with Multiple Heading Levels -->
-    <section id="about-hallownest" class="py-5">
-      <div class="container">
-        <h1>Descubre el Mundo de Hollow Knight</h1>
-        
-        <div class="row">
-          <div class="col-md-8">
-            <h2>Historia del Reino</h2>
-            <img 
-              src="/Imagenes/CiudaDeLagrimas.jpg" 
-              alt="Vista panorámica del reino de Hallownest" 
-              class="img-fluid mb-3 rounded"
-            >
-            <p>Hallownest es un reino subterráneo misterioso, poblado por criaturas insectoides que luchan contra una corrupción ancestral. Cada rincón del reino cuenta una historia de decadencia, esperanza y redención.</p>
-            
-            <h3>Características Principales</h3>
-            <img 
-              src="/Imagenes/caballero.jpg" 
-              alt="El Caballero de Hollow Knight" 
-              class="img-fluid mb-3 rounded"
-            >
-            <p>El juego destaca por su estilo artístico único, mecánicas de combate precisas y un mundo interconectado lleno de secretos. Los jugadores asumen el rol de un pequeño caballero sin nombre, equipado con una aguja que sirve como espada.</p>
-            
-            <h3>Explorando las Profundidades</h3>
-            <p>La exploración es fundamental en Hollow Knight. Cada área tiene su propia estética, enemigos y desafíos únicos, desde los <a href="https://hollowknight.fandom.com/es/wiki/Sendero_Verde">luminosos Senderos Verdes</a> hasta las oscuras profundidades del <a href="https://hollowknight.fandom.com/es/wiki/Nido_Profundo">Nido Profundo</a>.</p>
-          </div>
-          
-          <div class="col-md-4">
-            <table class="table table-dark">
-              <thead>
-                <tr>
-                  <th>Área</th>
-                  <th>Dificultad</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Ciudad de Lágrimas</td>
-                  <td>Media</td>
-                </tr>
-                <tr>
-                  <td>Senderos Verdes</td>
-                  <td>Baja</td>
-                </tr>
-                <tr>
-                  <td>Nido Profundo</td>
-                  <td>Alta</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+    <section>
+      <h2>Descubre el Mundo de Hollow Knight</h2>
+      <p>
+        Explora Hallownest, un reino subterráneo lleno de misterio y criaturas insectoides. Cada área revela una historia única de decadencia y redención.
+      </p>
+      <h3>Historia del Reino</h3>
+      <img src="/Imagenes/CiudaDeLagrimas.jpg" alt="Vista panorámica del reino de Hallownest" />
+      <p>
+        Hallownest está marcado por una antigua corrupción que amenaza con destruirlo. 
+        Juega como el Caballero, un pequeño héroe con una misión incierta.
+      </p>
+
+      <h3>Características Principales</h3>
+      <img src="/Imagenes/caballero.jpg" alt="El Caballero de Hollow Knight" />
+      <p>
+        Disfruta de combates precisos, un arte visual impresionante y un mundo interconectado lleno de secretos.
+      </p>
+
+      <h3>Explorando las Profundidades</h3>
+      <p>
+        Cada área tiene su propio estilo, enemigos y desafíos, como los <a style="color: #333;" href="https://hollowknight.fandom.com/es/wiki/Sendero_Verde">luminosos Senderos Verdes</a> o las oscuras cavernas del <a style="color: #333;" href="https://hollowknight.fandom.com/es/wiki/Nido_Profundo">Nido Profundo</a>.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Área</th>
+            <th>Dificultad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ciudad de Lágrimas</td>
+            <td>Media</td>
+          </tr>
+          <tr>
+            <td>Senderos Verdes</td>
+            <td>Baja</td>
+          </tr>
+          <tr>
+            <td>Nido Profundo</td>
+            <td>Alta</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
-    <!-- New Accessible Video Section -->
-    <section id="video-section" class="py-5 bg-light">
-      <div class="container">
-        <h2>Trailer Oficial</h2>
-        <div class="ratio ratio-16x9">
-          <iframe 
-            src="https://www.youtube.com/embed/UAO2urG23S4" 
-            title="Hollow Knight Trailer Oficial" 
-            allowfullscreen
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
-        </div>
-        
-        <!-- Text Description for Video Content -->
-        <div class="mt-3 video-description">
-          <h3>Descripción del Trailer</h3>
-          <p>El trailer muestra escenas dramáticas de combate, exploración de cavernas intrincadas, y momentos épicos de confrontación con jefes imponentes. Resalta la estética oscura y el diseño artístico único del juego.</p>
-        </div>
+    <section>
+      <h2>Trailer Oficial</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/1i2AzHKVKxk" title="Hollow Knight Trailer Oficial"></iframe>
       </div>
+      <p>
+        El trailer presenta escenas épicas de combate, exploración de cavernas y encuentros con jefes. El estilo artístico y el ambiente oscuro destacan en todo momento.
+      </p>
     </section>
 
-    <!-- Feedback Form with Accessibility -->
-    <section id="feedback" class="py-5">
-      <div class="container">
-        <h2>Comparte tu Experiencia</h2>
-        <form id="game-feedback-form" aria-labelledby="form-title">
-          <h3 id="form-title">Formulario de Retroalimentación</h3>
-          
-          <div class="mb-3">
-            <label for="player-name" class="form-label">Nombre del Jugador</label>
-            <input 
-              type="text" 
-              class="form-control" 
-              id="player-name" 
-              name="player-name" 
-              required 
-              aria-describedby="name-help"
-            >
-            <small id="name-help" class="form-text text-muted">Tu nombre o nickname en el juego</small>
-          </div>
-          
-          <div class="mb-3">
-            <label for="gameplay-rating" class="form-label">Calificación de Experiencia</label>
-            <select 
-              class="form-select" 
-              id="gameplay-rating" 
-              name="gameplay-rating" 
-              required
-            >
-              <option value="">Selecciona una calificación</option>
-              <option value="5">Excelente</option>
-              <option value="4">Muy Bueno</option>
-              <option value="3">Bueno</option>
-              <option value="2">Regular</option>
-              <option value="1">Necesita Mejoras</option>
-            </select>
-          </div>
-          
-          <button type="submit" class="btn btn-primary">Enviar Retroalimentación</button>
-        </form>
-      </div>
+    <section>
+      <h2>Comparte tu Experiencia</h2>
+      <form>
+        <div class="form-group">
+          <label for="player-name" class="form-label">Nombre del Jugador</label>
+          <input type="text" id="player-name" class="form-control" placeholder="Escribe tu nombre o nickname" required />
+        </div>
+        <div class="form-group">
+          <label for="gameplay-rating" class="form-label">Calificación</label>
+          <select id="gameplay-rating" class="form-select" required>
+            <option value="">Selecciona una calificación</option>
+            <option value="5">Excelente</option>
+            <option value="4">Muy Bueno</option>
+            <option value="3">Bueno</option>
+            <option value="2">Regular</option>
+            <option value="1">Malo</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
     </section>
 
-    <!-- Existing Footer... -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
+    <footer>
+      <p>&copy; 2024 Hollow Knight Fans</p>
+    </footer>
   </body>
 </html>
